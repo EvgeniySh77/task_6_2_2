@@ -18,6 +18,11 @@ namespace task_6_2_2
             color = penColor;
             cost = penCost;
         }
+
+        public void Display()
+        {
+            Console.WriteLine($"{color} {cost}");
+        }
     }
 
     class Program
@@ -25,10 +30,10 @@ namespace task_6_2_2
         static void Main()
         {
             Pen pen = new Pen();
-            Console.WriteLine($"{pen.color} {pen.cost}");
+            pen.Display();
 
             pen = new Pen("Зеленый", 80);
-            Console.WriteLine($"{pen.color} {pen.cost}");
+            pen.Display(); ;
 
             Console.ReadKey();
         }
